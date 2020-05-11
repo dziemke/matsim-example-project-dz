@@ -78,7 +78,7 @@ public class RunMatsimWithDemandModifications {
 		plan.addLeg(leg);
 
 		Activity workActivity = populationFactory.createActivityFromLinkId("w", Id.createLinkId(1));
-		homeActivity.setEndTime(17*60*60.);
+		workActivity.setEndTime(17*60*60.);
 		plan.addActivity(workActivity);
 
 		Leg leg2 = populationFactory.createLeg(TransportMode.car);
